@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPICYMIX</title>
+  <meta name="description" content="Experience the journey at SPICYMIX Restaurant with our seasonal menu crafted with locally sourced ingredients.">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header id="header" class="transparent">
+    <div class="container">
+      <div class="header-container">
+        <a href="#" class="logo">SPICYMIX</a>
+        
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+          <a href="#home" class="nav-link golden-underline" class="ram">Home</a>
+          <a href="#about" class="nav-link golden-underline">About</a>
+          <a href="#menu" class="nav-link golden-underline">Menu</a>
+          <a href="#contact" class="nav-link golden-underline">Contact</a>
+          <a href="reservation.html" class="btn-primary">Reserve a Table</a>
+        </nav>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-nav" class="mobile-nav">
+          <button id="close-menu-btn" class="close-menu-btn">
+            <i class="fas fa-times"></i>
+          </button>
+          <div class="mobile-nav-links">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#menu" class="nav-link">Menu</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <a href="reservation.html" class="btn-primary">Reserve a Table</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h2 class="subtitle">Welcome to</h2>
+          <h1 class="title">SPICYMIX</h1>
+          <p class="description">Experience the journey with our seasonal menu crafted with locally sourced ingredients.</p>
+          <div class="hero-buttons">
+            <a href="reservation.html" class="btn-primary">
+              Reserve a Table <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#menu" class="btn-secondary">View Our Menu</a>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-down">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-container">
+            <div class="about-image">
+              <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1000&auto=format&fit=crop" alt="Chef preparing food">
+            </div>
+            <div class="quote-box">
+              <p>"Cooking is like love. It should be entered into with abandon or not at all."</p>
+              <p class="quote-author">— Ram</p>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <h2 class="subtitle">Our Story</h2>
+            <h3 class="title">Tradition & Passion - 2025</h3>
+            <div class="about-text">
+              <p>
+                SPICYMIX was born from a simple passion for authentic flavors and memorable dining experiences. What began as a small family restaurant has evolved into a culinary landmark in the heart of the city.
+              </p>
+              <p>
+                Our philosophy is rooted in the timeless tradition of gathering around a table to share not just food, but moments. Every dish tells a story—of heritage, of craftsmanship, and of our deep respect for quality ingredients.
+              </p>
+              <p>
+                Under the guidance of our head chef RAM, whose culinary journey spans three decades and multiple continents, we've created a menu that balances innovation with time-honored techniques.
+              </p>
+            </div>
+            <div class="stats">
+              <div class="stat-item">
+                <p class="stat-number">01</p>
+                <p class="stat-label">Years of Excellence</p>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <p class="stat-number">04</p>
+                <p class="stat-label">Award-Winning Dishes</p>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <p class="stat-number">01</p>
+                <p class="stat-label">Locations</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+      <div class="container">
+        <div class="menu-header">
+          <h2 class="subtitle">Discover</h2>
+          <h3 class="title">Our Seasonal Menu</h3>
+          <p class="description">
+            Our menu changes with the seasons, always featuring the freshest local ingredients 
+            prepared with care and creativity.
+          </p>
+        </div>
+
+        <div class="menu-tabs">
+          <button class="menu-tab active" data-category="starters">Starters</button>
+          <button class="menu-tab" data-category="mains">Main Courses</button>
+          <button class="menu-tab" data-category="desserts">Desserts</button>
+          <button class="menu-tab" data-category="drinks">Drinks</button>
+        </div>
+
+        <div class="menu-items">
+          <!-- Menu items will be dynamically inserted here via JavaScript -->
+        </div>
+
+        <div class="menu-footer">
+          <a href="#" class="btn-primary">View Full Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-header">
+          <h2 class="subtitle">Visit Us</h2>
+          <h3 class="title">Find Our Restaurant</h3>
+          <p class="description">
+            We're located in the heart of the city. Come visit us or make a reservation online.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="map-container">
+            <div class="map-placeholder">
+              <i class="fas fa-map-marker-alt"></i>
+              <h4>Interactive Map Coming Soon</h4>
+              <p>1-, VAIDANA</p>
+            </div>
+          </div>
+
+          <div class="contact-details">
+            <div class="contact-cards">
+              <div class="contact-card">
+                <i class="fas fa-phone"></i>
+                <h4>Phone</h4>
+                <p>+91 9182015717</p>
+              </div>
+
+              <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <h4>Email</h4>
+                <p>srkotesh23@gmail.com</p>
+              </div>
+
+              <div class="contact-card">
+                <i class="fas fa-map-pin"></i>
+                <h4>Address</h4>
+                <p>1-, VAIDANA</p>
+              </div>
+
+              <div class="contact-card">
+                <i class="fas fa-clock"></i>
+                <h4>Hours</h4>
+                <p>Mon-Fri: 10am - 06pm</p>
+              </div>
+            </div>
+
+            <form id="contact-form" class="contact-form">
+              <div class="form-row">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+              </div>
+              <input type="text" placeholder="Subject" required>
+              <textarea placeholder="Your Message" rows="4" required></textarea>
+              <button type="submit" class="btn-gold">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3 class="footer-logo">SPICYMIX</h3>
+          <p class="footer-description">
+            Experience the taste of tradition with a modern twist. Our passion is serving food that creates memories.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-hours">
+          <h4 class="footer-title">Opening Hours</h4>
+          <ul class="hours-list">
+            <li class="hours-item">
+              <span>Monday - Friday<br>
+             10:00 - 18:00
+              </span>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h4 class="footer-title">Contact</h4>
+          <address class="footer-address">
+            <p>1-, VAIDANA</p>
+            <p>Phone: +91 9182015717</p>
+            <p>Email: srkotesh23@gmail.com</p>
+          </address>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; <span id="current-year"></span> SPICYMIX. All rights reserved.
+        </p>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

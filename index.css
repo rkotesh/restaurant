@@ -1,0 +1,93 @@
+body {
+    background-color: hsl(186, 59%, 21%);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 40rem;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  #btn1 {
+    margin-top: 20px;
+    width: 15%;
+    padding: 12px;
+    background-color: hsl(350, 70%, 25%);
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    overflow-x: hidden;
+    margin-left: 40px;
+  }
+  
+  #btn1:hover {
+    background-color: hsl(350, 70%, 25%);
+    transition: background-color 0.3s ease;
+  }
+  
+  #reserve {
+    width: max-content;
+    height: 100vh;
+    margin-left: 250px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #btn2 {
+    margin-top: 20px;
+    width: 83%;
+    padding: 12px;
+    background-color: hsl(350, 70%, 25%);
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    overflow-x: hidden;
+  }
+  
+  #btn2:hover {
+    background-color: hsl(350, 70%, 25%);
+    transition: background-color 0.3s ease;
+  }
+  
+  /* 🔽 Mobile View (Responsive) */
+  @media screen and (max-width: 768px) {
+    input,
+    select,
+    textarea {
+      width: 90%;
+    }
+  
+    #btn1 {
+      width: 90%;
+      margin-left: 0;
+    }
+  
+    #btn2 {
+      width: 90%;
+    }
+  
+    #reserve {
+      margin-left: 0;
+      padding: 20px;
+      width: 100%;
+      height: auto;
+    }
+  }
+  
