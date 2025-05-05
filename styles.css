@@ -43,7 +43,6 @@
     background-color: var(--background);
     color: var(--foreground);
     line-height: 1.6;
-    width: 1220.40;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -87,13 +86,8 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    text-align: center;
   }
   
-  #rbtn{
-    text-align: center;
-  }
-
   .btn-primary:hover {
     background-color: hsl(350, 70%, 20%);
   }
@@ -179,7 +173,6 @@
     z-index: 50;
     transition: all 0.3s ease-in-out;
     padding: 1rem 0;
-    width: 1520.40px;
   }
   
   header.scrolled {
@@ -803,7 +796,7 @@
     }
   }
   
-  @media (min-width: 1024px) {
+  @media (width: 1024px) {
     .title {
       font-size: 3rem;
     }
@@ -814,35 +807,6 @@
     
     .contact-grid {
       grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-
-  @media screen and (max-width: 768px) {
-    nav ul {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    nav ul li {
-      margin-bottom: 10px;
-    }
-  
-    .container, .content, .form-container {
-      width: 100%;
-      padding: 10px;
-    }
-  
-    form input, form select, form textarea, form button {
-      width: 100%;
-    }
-  
-    h1, h2, h3 {
-      font-size: 1.5em;
-    }
-  
-    .hospital-card {
-      flex-direction: column;
     }
   }
   
