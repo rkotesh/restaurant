@@ -758,13 +758,13 @@
   }
   
   /* Media Queries */
-  @media (min-width: 640px) {
+  @media (min-width: 768px) {
     .hero-content .title {
       font-size: 3.5rem;
     }
     
     .hero-buttons {
-      flex-direction: row;
+      flex-direction: column;
     }
     
     .form-row {
